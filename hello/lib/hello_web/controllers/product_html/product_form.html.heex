@@ -1,0 +1,12 @@
+<.form :let={f} for={@changeset} action={@action}>
+  <.input field={f[:title]} type="text" label="Title" />
+  <.input field={f[:description]} type="text" label="Description" />
+  <.input field={f[:price]} type="number" label="Price" step="any" />
+  <.input field={f[:views]} type="number" label="Views" />
+  <.input field={f[:category_ids]} type="select" multiple options={category_opts(@changeset)} />
+
+  <footer>
+    <.button variant="primary">Save Product</.button>
+    <.button :if={@return_to} href={@return_to}>Cancel</.button>
+  </footer>
+</.form>

@@ -1,0 +1,8 @@
+<Layouts.app flash={@flash}>
+  <.header>
+    New Product
+    <:subtitle>Use this form to manage product records in your database.</:subtitle>
+  </.header>
+
+  <.product_form changeset={@changeset} action={~p"/products"} return_to={~p"/products"} />
+</Layouts.app>

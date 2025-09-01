@@ -1,0 +1,27 @@
+<Layouts.app flash={@flash}>
+  <.header>
+    Product {@product.id}
+    <:subtitle>This is a product record from your database.</:subtitle>
+    <:actions>
+      <.button navigate={~p"/products"}>
+        <.icon name="hero-arrow-left" />
+      </.button>
+      <.button variant="primary" navigate={~p"/products/#{@product}/edit?return_to=show"}>
+        <.icon name="hero-pencil-square" /> Edit product
+      </.button>
+    </:actions>
+  </.header>
+
+  <.list>
+    <:item title="Title">{@product.title}</:item>
+    <:item title="Description">{@product.description}</:item>
+    <:item title="Price">{@product.price}</:item>
+    <:item title="Views">{@product.views}</:item>
+
+    <:item title="Categories">
+      <ul>
+        <li :for={cat <- @product.categories}>{cat.title}</li>
+      </ul>
+    </:item>
+  </.list>
+</Layouts.app>
