@@ -1,11 +1,11 @@
 import Config
 
 # Configure your database
-config :auth, Auth.Repo,
+config :my_app, MyApp.Repo,
   username: "postgres",
   password: "postgres",
   hostname: "localhost",
-  database: "auth_dev",
+  database: "my_app_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -16,17 +16,17 @@ config :auth, Auth.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we can use it
 # to bundle .js and .css sources.
-config :auth, AuthWeb.Endpoint,
+config :my_app, MyAppWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
   http: [ip: {127, 0, 0, 1}, port: String.to_integer(System.get_env("PORT") || "4000")],
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "Tq4H9vSaSIQyKXefwZMJkcErgJr/CK9JN/OKMnga+h32tH1j1RKpBhqOdVsc2/oL",
+  secret_key_base: "EvYn7tIJihjSsYYEYXJT0BUR83PhHPZbmaf2CXNlPX9QgAv9aIRZZ/8g8Dinaugy",
   watchers: [
-    esbuild: {Esbuild, :install_and_run, [:auth, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:auth, ~w(--watch)]}
+    esbuild: {Esbuild, :install_and_run, [:my_app, ~w(--sourcemap=inline --watch)]},
+    tailwind: {Tailwind, :install_and_run, [:my_app, ~w(--watch)]}
   ]
 
 # ## SSL Support
@@ -53,18 +53,18 @@ config :auth, AuthWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :auth, AuthWeb.Endpoint,
+config :my_app, MyAppWeb.Endpoint,
   live_reload: [
     web_console_logger: true,
     patterns: [
       ~r"priv/static/(?!uploads/).*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/auth_web/(?:controllers|live|components|router)/?.*\.(ex|heex)$"
+      ~r"lib/my_app_web/(?:controllers|live|components|router)/?.*\.(ex|heex)$"
     ]
   ]
 
 # Enable dev routes for dashboard and mailbox
-config :auth, dev_routes: true
+config :my_app, dev_routes: true
 
 # Do not include metadata nor timestamps in development logs
 config :logger, :default_formatter, format: "[$level] $message\n"

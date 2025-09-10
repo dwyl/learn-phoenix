@@ -1,9 +1,9 @@
-defmodule Auth.MixProject do
+defmodule MyApp.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :auth,
+      app: :my_app,
       version: "0.1.0",
       elixir: "~> 1.15",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -20,7 +20,7 @@ defmodule Auth.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Auth.Application, []},
+      mod: {MyApp.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
@@ -40,8 +40,7 @@ defmodule Auth.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:bcrypt_elixir, "~> 3.0"},
-      {:phoenix, "~> 1.8.0"},
+      {:phoenix, "~> 1.8.1"},
       {:phoenix_ecto, "~> 4.5"},
       {:ecto_sql, "~> 3.13"},
       {:postgrex, ">= 0.0.0"},
@@ -83,10 +82,10 @@ defmodule Auth.MixProject do
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
       "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],
-      "assets.build": ["tailwind auth", "esbuild auth"],
+      "assets.build": ["compile", "tailwind my_app", "esbuild my_app"],
       "assets.deploy": [
-        "tailwind auth --minify",
-        "esbuild auth --minify",
+        "tailwind my_app --minify",
+        "esbuild my_app --minify",
         "phx.digest"
       ],
       precommit: ["compile --warning-as-errors", "deps.unlock --unused", "format", "test"]
