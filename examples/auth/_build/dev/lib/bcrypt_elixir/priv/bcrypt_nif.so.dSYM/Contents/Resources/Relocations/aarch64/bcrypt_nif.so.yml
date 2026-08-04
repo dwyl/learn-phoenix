@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/n/code/learn-phoenix/examples/auth/_build/dev/lib/bcrypt_elixir/priv/bcrypt_nif.so'
-relocations:     []
-...

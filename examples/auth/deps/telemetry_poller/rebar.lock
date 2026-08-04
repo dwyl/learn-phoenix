@@ -1,8 +1,0 @@
-{"1.2.0",
-[{<<"telemetry">>,{pkg,<<"telemetry">>,<<"1.0.0">>},0}]}.
-[
-{pkg_hash,[
- {<<"telemetry">>, <<"0F453A102CDF13D506B7C0AB158324C337C41F1CC7548F0BC0E130BBF0AE9452">>}]},
-{pkg_hash_ext,[
- {<<"telemetry">>, <<"73BC09FA59B4A0284EFB4624335583C528E07EC9AE76ACA96EA0673850AEC57A">>}]}
-].
