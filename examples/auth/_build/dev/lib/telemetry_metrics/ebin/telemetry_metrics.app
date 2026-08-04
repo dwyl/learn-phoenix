@@ -1,0 +1,13 @@
+{application,telemetry_metrics,
+             [{modules,['Elixir.Telemetry.Metrics',
+                        'Elixir.Telemetry.Metrics.ConsoleReporter',
+                        'Elixir.Telemetry.Metrics.Counter',
+                        'Elixir.Telemetry.Metrics.Distribution',
+                        'Elixir.Telemetry.Metrics.LastValue',
+                        'Elixir.Telemetry.Metrics.Sum',
+                        'Elixir.Telemetry.Metrics.Summary']},
+              {optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger,telemetry]},
+              {description,"Provides a common interface for defining metrics based on Telemetry events.\n"},
+              {registered,[]},
+              {vsn,"1.1.0"}]}.

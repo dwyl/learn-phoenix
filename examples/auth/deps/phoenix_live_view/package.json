@@ -1,0 +1,75 @@
+{
+  "name": "phoenix_live_view",
+  "version": "1.1.11",
+  "description": "The Phoenix LiveView JavaScript client.",
+  "license": "MIT",
+  "type": "module",
+  "module": "./priv/static/phoenix_live_view.esm.js",
+  "main": "./priv/static/phoenix_live_view.cjs.js",
+  "unpkg": "./priv/static/phoenix_live_view.min.js",
+  "jsdelivr": "./priv/static/phoenix_live_view.min.js",
+  "exports": {
+    "import": {
+      "types": "./assets/js/types/index.d.ts",
+      "default": "./priv/static/phoenix_live_view.esm.js"
+    },
+    "require": "./priv/static/phoenix_live_view.cjs.js"
+  },
+  "author": "Chris McCord <chris@chrismccord.com> (http://www.phoenixframework.org)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/phoenixframework/phoenix_live_view.git"
+  },
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "package.json",
+    "priv/static/*",
+    "assets/js/**"
+  ],
+  "types": "./assets/js/types/index.d.ts",
+  "dependencies": {
+    "morphdom": "2.7.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.27.2",
+    "@babel/core": "7.27.4",
+    "@babel/preset-env": "7.27.2",
+    "@babel/preset-typescript": "^7.27.1",
+    "@eslint/js": "^9.29.0",
+    "@playwright/test": "^1.53.0",
+    "@types/jest": "^30.0.0",
+    "@types/phoenix": "^1.6.6",
+    "css.escape": "^1.5.1",
+    "eslint": "9.29.0",
+    "eslint-plugin-jest": "28.14.0",
+    "eslint-plugin-playwright": "^2.2.0",
+    "globals": "^16.2.0",
+    "jest": "^30.0.0",
+    "jest-environment-jsdom": "^30.0.0",
+    "jest-monocart-coverage": "^1.1.1",
+    "monocart-reporter": "^2.9.21",
+    "phoenix": "1.7.21",
+    "prettier": "3.5.3",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.0"
+  },
+  "scripts": {
+    "setup": "mix deps.get && npm install",
+    "build": "tsc",
+    "e2e:server": "MIX_ENV=e2e mix test --cover --export-coverage e2e test/e2e/test_helper.exs",
+    "e2e:test": "mix assets.build && cd test/e2e && npx playwright install && npx playwright test",
+    "js:test": "npm run build && jest",
+    "js:test.coverage": "npm run build && jest --coverage",
+    "js:test.watch": "npm run build && jest --watch",
+    "js:lint": "eslint",
+    "js:format": "prettier --write assets --log-level warn && prettier --write test/e2e --log-level warn",
+    "js:format.check": "prettier --check assets --log-level warn && prettier --check test/e2e --log-level warn",
+    "test": "npm run js:test && npm run e2e:test",
+    "typecheck:tests": "tsc -p assets/test/tsconfig.json",
+    "cover:merge": "node test/e2e/merge-coverage.js",
+    "cover": "npm run test && npm run cover:merge",
+    "cover:report": "npx monocart show-report cover/merged-js/index.html"
+  }
+}

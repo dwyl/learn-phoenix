@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" phx-socket={live_socket_path(@conn)}>
+  <head>
+    <script nonce={csp_nonce(@conn, :script)}>
+      window.LiveDashboard = {
+        customHooks: {},
+        registerCustomHooks(hooks) {
+          this.customHooks = {...this.customHooks, ...hooks}
+        }
+      }
+    </script>
+    <%= custom_head_tags(assigns, :after_opening_head_tag) %>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no"/>
+    <meta name="csrf-token" content={Phoenix.Controller.get_csrf_token()} />
+    <title><%= assigns[:page_title] || "Phoenix LiveDashboard" %></title>
+    <link rel="stylesheet" nonce={csp_nonce(@conn, :style)} href={asset_path(@conn, :css)}>
+    <script nonce={csp_nonce(@conn, :script)} src={asset_path(@conn, :js)} defer></script>
+    <%= custom_head_tags(assigns, :before_closing_head_tag) %>
+  </head>
+  <body>
+    <div class="d-flex flex-column align-items-stretch layout-wrapper">
+      <div class="flex-grow-1">
+        <%= @inner_content %>
+      </div>
+      <footer class="flex-shrink-0">
+        Phoenix LiveDashboard was made with love by
+        <a href="https://dashbit.co/" target="_blank" class="footer-dashbit">
+          <div class="dashbit-logo mini-logo" role="img" aria-label="Dashbit Logo"></div>
+          Dashbit
+        </a>
+        <span class="px-1">&</span>
+        <a href="https://dockyard.com/" target="_blank">
+          <div class="dock-yard-logo mini-logo" role="img" aria-label="DockYard Logo"></div>
+          DockYard
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

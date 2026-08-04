@@ -1,0 +1,10 @@
+{application,phoenix_template,
+             [{modules,['Elixir.Phoenix.Template',
+                        'Elixir.Phoenix.Template.EExEngine',
+                        'Elixir.Phoenix.Template.Engine',
+                        'Elixir.Phoenix.Template.ExsEngine']},
+              {optional_applications,[phoenix_html]},
+              {applications,[kernel,stdlib,elixir,eex,phoenix_html]},
+              {description,"Template rendering for Phoenix"},
+              {registered,[]},
+              {vsn,"1.0.4"}]}.

@@ -1,0 +1,4 @@
+CompileFlags:
+  Add:
+    - "--include-directory=/Users/jonatanklosko/.asdf/installs/erlang/27.2/usr/include/"
+    - "-std=c++17"

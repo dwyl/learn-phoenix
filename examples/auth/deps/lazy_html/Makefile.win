@@ -1,0 +1,46 @@
+PRIV_DIR=$(MIX_APP_PATH)\priv
+NIF_PATH=$(PRIV_DIR)\liblazy_html.dll
+C_SRC=$(MAKEDIR)\c_src
+
+CPPFLAGS=/LD /std:c++17 /W4 /wd4100 /wd4458 /O2 /EHsc
+CPPFLAGS=$(CPPFLAGS) /I"$(ERTS_INCLUDE_DIR)" /I"$(FINE_INCLUDE_DIR)"
+
+LEXBOR_DIR=$(MAKEDIR)\_build\c\third_party\lexbor\$(LEXBOR_GIT_SHA)
+!ifdef CC_PRECOMPILER_CURRENT_TARGET
+LEXBOR_BUILD_DIR=$(LEXBOR_DIR)\build-$(CC_PRECOMPILER_CURRENT_TARGET)
+!else
+LEXBOR_BUILD_DIR=$(LEXBOR_DIR)\build
+!endif
+LEXBOR_LIB=$(LEXBOR_BUILD_DIR)\lexbor_static.lib
+CPPFLAGS=$(CPPFLAGS) /I"$(LEXBOR_DIR)\source"
+
+SOURCES=$(C_SRC)\*.cpp
+
+all: $(NIF_PATH)
+
+$(NIF_PATH): $(SOURCES) $(LEXBOR_LIB)
+	@ if not exist "$(PRIV_DIR)" mkdir "$(PRIV_DIR)"
+	cl $(CPPFLAGS) -DLEXBOR_STATIC $(SOURCES) $(LEXBOR_LIB) /Fe"$(NIF_PATH)"
+
+$(LEXBOR_LIB): $(LEXBOR_DIR)
+	@ mkdir -p $(LEXBOR_BUILD_DIR)
+	cd $(LEXBOR_BUILD_DIR) && \
+		cmake .. -DLEXBOR_BUILD_SHARED=OFF -DLEXBOR_BUILD_STATIC=ON -DLEXBOR_BUILD_SEPARATELY=OFF \
+			-G "NMake Makefiles" \
+# With the CMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded option [1], we
+# tell cmake to compile lexbor static library with /MT flag, which
+# means it will statically link the C runtime library. For the NIF
+# library, we compile with /LD flag (to produce .dll), which implies
+# /MT by default [2]. It is important that both link the same C
+# runtime library, otherwise there are conflicts on startup.
+#
+# [1]: https://cmake.org/cmake/help/latest/variable/CMAKE_MSVC_RUNTIME_LIBRARY.html
+# [2]: https://learn.microsoft.com/en-us/cpp/build/reference/md-mt-ld-use-run-time-library
+			-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded && \
+		cmake --build .
+
+$(LEXBOR_DIR):
+	@ git clone --depth 1 https://github.com/lexbor/lexbor.git $(LEXBOR_DIR) && \
+		cd $(LEXBOR_DIR) && \
+		git fetch --depth 1 origin $(LEXBOR_GIT_SHA) && \
+		git checkout $(LEXBOR_GIT_SHA)

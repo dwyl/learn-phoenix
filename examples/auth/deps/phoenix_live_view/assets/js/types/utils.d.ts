@@ -1,0 +1,13 @@
+export function detectDuplicateIds(): void;
+export function detectInvalidStreamInserts(inserts: any): void;
+export function logError(msg: any, obj: any): void;
+export function isCid(cid: any): boolean;
+export function debug(view: any, kind: any, msg: any, obj: any): void;
+export function closure(val: any): any;
+export function clone(obj: any): any;
+export function closestPhxBinding(el: any, binding: any, borderEl: any): any;
+export function isObject(obj: any): boolean;
+export function isEqualObj(obj1: any, obj2: any): boolean;
+export function isEmpty(obj: any): boolean;
+export function maybe(el: any, callback: any): any;
+export function channelUploader(entries: any, onError: any, resp: any, liveSocket: any): void;

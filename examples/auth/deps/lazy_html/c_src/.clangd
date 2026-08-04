@@ -1,0 +1,6 @@
+CompileFlags:
+  Add:
+    - "--include-directory=/Users/jonatanklosko/.asdf/installs/erlang/27.2/usr/include/"
+    - "--include-directory=/Users/jonatanklosko/git/fine/include/"
+    - "--include-directory=/Users/jonatanklosko/git/lazy_html/_build/c/third_party/lexbor/2.5.0/source"
+    - "-std=c++17"
