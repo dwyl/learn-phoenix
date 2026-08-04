@@ -20,8 +20,8 @@ that is _why_ we use _frameworks_ to build our apps!
 > See: "**Top 10 Reasons Why Phoenix**" (_further down this page!_)
 
 There are _many_ frameworks to choose from
-(_a **few** "popular" ones are mentioned **below**
-in the "**Questions**" section_). <br />
+(_a **few** popular ones are mentioned **below**
+in the **Questions** section_).
 But if we go by what is "_popular_" we would
 still be riding horses (_and carts_) everywhere
 and no _progress_ would be made. <br />
@@ -39,7 +39,7 @@ _ever again_!
 -->
 
 > **Note**: **all** the reasons "**_Why_**"
-for **_Elixir_** _also apply_ to **_Phoenix_**! <br />
+for **`Elixir`** _also apply_ to **`Phoenix`**! <br />
 check them out:
 [dwyl/**learn-elixir**#**key-advantages**](https://github.com/dwyl/learn-elixir#key-advantages-) <br />
 
@@ -155,7 +155,7 @@ so you can serve more people with fewer resources.
 
 + Anyone who needs to use the "_most popular_" framework or language
 (_for whatever reason_).
-+ Companies who already have lots of legacy Java/PHP/etc.
++ Companies who already have lots of legacy `Java` / `PHP` / etc.
 and cannot invest the time to learn/use something new.
 + Developers who want "_job security_" bug-fixing unreliable code.
 
@@ -164,12 +164,14 @@ and cannot invest the time to learn/use something new.
 discuss: https://github.com/dwyl/learn-phoenix-framework/issues/14
 -->
 
-
 ## _How_? 👩🏻‍💻
 
 ### Assumptions / Pre-Requisites?
 
-#### Elixir
+The only recommended learning _before_ diving into `Phoenix`
+is learning `Elixir`.
+
+### `Elixir` 💧
 
 You _cannot_ build a `Phoenix` App without knowing `Elixir`. <br />
 If you are new to `Elixir`, "star" (_bookmark_) `this` repo
@@ -229,12 +231,11 @@ come back and try these **_beginner-friendly_ examples**:
 + **Append-only Log** (_how to store your App's data_):
 [https://github.com/dwyl/**phoenix-ecto-append-only-log-example**](https://github.com/dwyl/phoenix-ecto-append-only-log-example)
 
+### Book? 📘
 
-### Book?
-
-When we started learning `Pheonix` in 2015,
+When we started learning `Pheonix` in **2015**,
 there was only one book written by
-[@chrismccord](https://github.com/chrismccord) creator of `Phoenix`: 
+[@chrismccord](https://github.com/chrismccord) creator of `Phoenix`:
 [**Programming Phoenix**](https://pragprog.com/book/phoenix14/programming-phoenix-1-4) <br />
 Sadly, Chris has been too busy building `Phoenix`
 and the book hasn't been updated recently,
@@ -247,6 +248,8 @@ _several_ great books have been published on the topic:
 <img src="https://github.com/user-attachments/assets/649d674e-9a9e-4e30-9a59-922a8c932ca9" />
 
 Any of these books is a good starting point.
+
+Our comprehensive _free_ tutorials are also a great starting point.
 
 <!--
 The authors are _individually **impressive**_ and _collectively_
@@ -290,13 +293,13 @@ search is your friend:
 
 -->
 
-# _Our Top 10_ Reasons _Why_ Phoenix
+# _Our Top 10_ Reasons _Why_ Phoenix 🔝
 
 > "_**Phoenix** provides the **productivity** of Ruby-on-Rails <br />
 with the **concurrency** and **fault-tolerance** of **Erlang**_."
 
 0. Beyond all the (_fantastic_) technical benefits,
-what attracts _us_ to Phoenix is the ***Great Community***
+what attracts _us_ to Phoenix is the **_Great Community_**
 of people around the world who are _excited_ about making Phoenix
 an _amazing_ tool for building web apps! <br />
 Having [_welcomming_ people](https://github.com/phoenixframework/phoenix/issues/1624) who will
@@ -341,13 +344,15 @@ developers are more _productive_ and there is ***less code to maintain***!
 1. ***Testability*** due to functional programming of all controllers!
 2. **Easy Deployment**: https://hexdocs.pm/phoenix/heroku.html
 3. ***Zero-downtime Deployment*** is ***free***! (_again because of Erlang_). Erlang manages transitioning "_live/active_" users from the old to new version of your app without them even _noticing_ that it was upgraded/updated!!
-4. ***Built-in Monitoring/Managment*** of your app through Erlang supervisors
-mean that you know _exactly_ how your app is performing, what parts have
-crashed/restarted and why! This is a feature we _pay_ (_a lot_) for in other frameworks and here it's ***free***!!
-
+4. **_Built-in Monitoring/Managment_** of your app
+  through **`Erlang` supervisors**
+mean that you know _exactly_ how your app is performing,
+what parts have crashed/restarted and why!
+This is a feature we _pay_ (_a lot_) for in
+other frameworks and here it's **_free_**!!
 
 Can _you_ think of _another_ reason
-_why_ using Phoenix is ***awesome***?! <br />
+_why_ using Phoenix is **_awesome_**?! <br />
 ***Please Share your thoughts*** in this thread:
 https://github.com/dwyl/learn-phoenix-framework/issues/13
 
@@ -355,50 +360,55 @@ https://github.com/dwyl/learn-phoenix-framework/issues/13
 
 # _Questions_?
 
-### Do I _need_ to learn Elixir `before` trying/using Phoenix?
+### Do I _need_ to learn `Elixir` _before_ trying/using `Phoenix`?
 
-***Yes***. See: https://github.com/dwyl/learn-elixir
+**_Yes_**. See: https://github.com/dwyl/learn-elixir
 
-### Do I Need to _know_ Erlang to use Elixir & Phoenix...?
+### Do I Need to _know_ `Erlang` to use `Elixir` & `Phoenix`...?
 
-***No***. You can start learning/using Elixir _today_ and
-call Erlang functions when required, <br />
-but you ***don't need*** to know Erlang
-`before` you can use Phoenix!
+***No***. You can start learning/using `Elixir` _today_ and
+call `Erlang` functions when required, <br />
+but you **_don't need_** to know `Erlang`
+`before` you can use `Phoenix`!
 
-### But Phoenix is _not_ "_Mainstream_" ... Should I/we _use_ it...?
+### But `Phoenix` is _not_ "_Mainstream_" ... Should I/we _use_ it...?
 
-There are _many_ web application frameworks you/we can choose from:
-https://en.wikipedia.org/wiki/Comparison_of_web_frameworks <br />
+There are _many_ web application frameworks
+you/we can choose from:
+[wikipedia.org/wiki/Comparison_of_web_frameworks](https://en.wikipedia.org/wiki/Comparison_of_web_frameworks) <br />
 So _why_ would _anyone_ select a framework written in a programming language
-that is not "_mainstream_"...?
+that is not _mainstream_...?
 
-### Why are we not using Hapi.js _anymore_...?
+### Why are we not using `Node.js` _anymore_...?
 
-This is _missinformation_. We _are_ still using Hapi.js
+This is _missinformation_.
+We _are_ still using `Hapi.js`
 for a _number_ of projects where it is _appropriate_. <br />
-This includes _several_ client projects and internal dwyl apps/tools.
+This includes _several_ client projects
+and internal dwyl apps/tools.
 
-We _decided_ to use Phoenix for our _new_ projects for these simple reasons:
-+ Elixir is a _nicer_ language than JavaScript.
-`#LessIsMore` `#LessButBetter` `#SmallIsBeautiful` `#SyntaxMatters`
-+ JS _can_ be functional, whereas Elixir ***is*** (_always_) Functional!
+We _decided_ to use `Phoenix`
+for our **_new_ projects** for these simple reasons:
++ `Elixir` is a _nicer_ language than `JavaScript`.
++ `JS` _can_ be functional, whereas `Elixir` **_is_** (_always_) Functional!
 The _distinction_ makes all the difference! <br />
 With "functional" programming,
-the programs are a ***lot*** easier to think about
+the programs are a **_lot_** easier to think about
 while you are writing/maintaining them!
-+ Elixir uses the Erlang VM which is _way_ more efficient/powerful than "V8"
-+ The Erlang VM scales _much easier_ to multi-core multi-server multi-data-center
-than Node.js <br />
++ `Elixir` uses the `Erlang` VM which is _way_ more efficient/powerful than "V8"
++ The `Erlang` VM scales _much easier_
+to multi-core multi-server multi-data-center
+than `Node.js` <br />
 (_or pretty much anything else for that matter!!_)
 
 > _For our new projects we **need multi-data-center fault-tolerance**! <br />
 we get that "**for free**" by using **Erlang -> Elixir -> Phoenix**_!!
 
-In our _opinion_ Hapi.js is still "_the best_" Node.js framework and
+In our _opinion_ Hapi.js is still "_the best_" `Node.js` framework and
 we will `continue` to use and _recommend_ it <br />
 to people that need _simple_ apps that scale and are easy to maintain. <br />
-see: https://github.com/dwyl/learn-hapi
+see: 
+[dwyl/**learn-hapi**](https://github.com/dwyl/learn-hapi)
 
 Also we still use JavaScript for all our AWS Lambda Micro-Services,
 that is not going to change. <br />
@@ -406,74 +416,85 @@ They are simple, efficient and
 scale really well!  <br />
 see: https://github.com/dwyl/learn-aws-lambda
 
-### What's "Wrong" with using Rails or Django?
+### What's "Wrong" with using `Rails` or `Django`?
 
 The _original_ "_productive_" web frameworks
 were "Ruby-on-Rails" and "Django" (_python_) back in 2005! <br />
 (We _used_ both of these for periods in our "_journey_" and
 can speak on the _advantages_ of each of them!) <br />
 
-> There is "_nothing wrong_" with using Rails or Django. <br />
+> There is "_nothing wrong_" with using `Rails` or `Django`. <br />
 > We think there are still plenty of use-cases for both frameworks. <br />
 > We just _know_ that it's (_a lot_) _easier_ to build "real-time" <br />
 > with Phoenix because "Channels" (_WebSockets_) are baked in, <br />
 > and the Elixir/Erlang concurrency is a whole different ballgame! <br />
 > Erlang (and thus Phoenix) can handle
-***millions*** of _concurrent users_ on a single server,<br />
+**_millions_** of _concurrent users_ on a single server,<br />
 > whereas a Rails/Django server can only handle a few thousand (_at best_!) <br />
 > if your app is only serving a few thousand people at once, then you're fine!!
 
-We ***love*** the fact that Erlang uses "_lighweight long-lived_" processes, <br />
-which means we can connect _millions_ of (_IoT_) devices ...
-For IoT Erlang is (_unquestionably_) the Answer! <br />
+We **_love_** the fact that `Erlang`
+uses "_lighweight long-lived_" processes,<br />
+which means we can connect _millions_ of devices ...
+For IoT `Erlang` is (_unquestionably_) the Answer! <br />
 For simpler web apps where you only expect a few users per day,
-Rails/Django are still viable.
+`Rails`/`Django` are still viable.
 
 But **why _compromise_** if you **don't _have_ to**? <br />
-If you can have a [***Tesla***](http://www.cnbc.com/2015/08/27/teslas-p85d-is-the-best-car-consumer-reports-has-ever-tested.html) for the "price" of a Ford Focus,
-why _wouldn't_ you?!? <br />
-Why _settle_ for _good_ when you can _easily_ have/use the ***best***?
+Why _settle_ for _good_ when you can _easily_ have/use the **_best_**?
 
-### But GitHub Still Uses Rails ... Surely GitHub is "_Scalable_"?
+### But `GitHub` Still Uses `Rails` ... Surely `GitHub` is "_Scalable_"?
 
-***Yes***, GitHub is still using Rails for their Web App/Site. <br />
-But ask _any_ of the _core_ team at GitHub if (_given the chance to start over_)
-they would _chose_ Rails<br />
-to build GitHub in 2017, and see how many of them say "_yes, of course_"
+**_Yes_**, GitHub is still using Rails for their Web App/Site. <br />
+But ask _any_ of the _core_ team at GitHub if
+(_given the chance to start over_)
+they would _chose_ `Rails`<br />
+to build `GitHub` _today_,
+and see how many of them say "_yes, of course_"
 (_with a straight face..._)!
 
-Also, GitHub does a _lot_ of things to Scale Rails in the background. <br />
-And _many_ of their _newer_ (_client-side_) features are written in JavaScript!
-see: https://github.com/github
+Also, `GitHub` does a _lot_ of things to scale `Rails` in the background. <br />
+And _many_ of their _newer_ (_client-side_)
+features are written in `JavaScript`!
+see: [/github](https://github.com/github)
 
-> Bottom line is: _anything_ can be _made_ to scale using "DevOps", <br />
-> but ***Phoenix*** is _made_ to **scale** by `default`
-> because Erlang (was) _invented_ (to) scale!
+> Bottom line is:
+> _anything_ can be _made_ to scale using
+> [**DevOps**](https://github.com/dwyl/learn-devops), <br />
+> but **`Phoenix`** is _made_ to **scale** by `default`
+> because `Erlang` was _invented_ solve scale!
 
+### Why _NOT_ Use Go? 🤷🏻‍♀️
 
-### Why _NOT_ Use Go?
-
-> "_There are two kinds of programming languages - those that nobody uses and those that everybody's bitching about_" ~ Bjarne Stroustrup
+> "_There are two kinds of programming languages -
+> those that nobody uses and those that everybody's bitching about_"
+> ~ Bjarne Stroustrup
 (_creator of_ [`C++`](https://www.youtube.com/watch?v=JBjjnqG0BP8))
 
-Go is _very_ popular. Largely due to the fact that Google "_sponsors_" it. <br />
-It was meant to simplify (_replace_) `C++` and Java inside Google ... <br />
+`Go` is _very_ popular.
+Largely due to the fact that `Google` "_sponsors_" it. <br />
+It was meant to simplify (_replace_) `C++` and `Java` inside `Google` ... <br />
 and for the most part, it has succeeded!
 
-We _really_ like Go. It was our "number two" choice when deciding
+We _really_ like `Go`.
+See:
+[dwyl/**learn-go**](https://github.com/dwyl/learn-go)
+`Go` was our "number two" choice when deciding
 what programming language <br />
-(_after Elixir_) in our "post JS stack"...
-The ***decision*** to _use_ `elixir` instead of _anything_ `else` was ***easy***:
-+ Elixir is functional (_much simpler to read/write/maintain/extend_)
-+ Elixir functions compose in a really elegant way as "plugs"/"***pipelines***"
+(_after `Elixir`_) in our "post `JS` stack"...
+The **_decision_** to _use_ `Elixir`
+instead of _anything_ `else` was **_easy_**:
++ `Elixir` is functional (_much simpler to read/write/maintain/extend_)
++ `Elixir` functions compose in a really elegant way
+  as "plugs"/"**_pipelines_**"
 + Data is immutable which makes application state predictable (_no guessing_!)
 + Types are dynamic and inferred (_no need to manually declare them_)
 but there are rules which simplify things and the compiler checks them
 giving an appropriate warning.
-+ Erlang makes distributed apps ***much easier*** and our _plan_ is to build
-IoT systems that will mean connecting _many_ (*millions*) devices
-with persistent connections, Erlang was ***made for this***!
-+ Phoenix includes _many_ useful things out-of-the box including _several_
++ `Erlang` makes distributed apps **_much easier_** and our _plan_ is to build
+IoT systems that will mean connecting _many_ (_millions_) devices
+with persistent connections, `Erlang` was **_made_ for this**!
++ `Phoenix` includes _many_ useful things out-of-the box including _several_
 security features most people won't even think of.
 
 Further Reading:
@@ -488,7 +509,8 @@ Further Reading:
 + Discussion:
   https://www.reddit.com/r/elixir/comments/3c8yfz/how_does_go_compare_to_elixir
 <br />
-(`help wanted` expanding this answer...)
+
+(`#HelpWanted` expanding this answer...)
 
 <!--
 ### Why _NOT_ Use Scala + `Play` Framework _instead_...?
@@ -534,4 +556,4 @@ Tell us: https://github.com/dwyl/learn-phoenix-web-development/issues
 If you like ***Functional Programming*** (**FP**) so much, why not use Haskell?
 -->
 
-#### _Please_ ask more questions: https://github.com/dwyl/learn-phoenix-framework/issues
+### _Please_ ask more questions: [/issues](https://github.com/dwyl/learn-phoenix-framework/issues)
