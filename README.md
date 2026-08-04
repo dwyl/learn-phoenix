@@ -8,6 +8,10 @@ Learn how to use the **`Phoenix` Framework** to
 that are **_fast_** for "_end-users_", **_reliable_**,
 **_scalable_**, **_maintainable_** _and_ _easily_ **_extensible_**!
 
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dwyl/phoenix-chat-example/ci.yml?label=build&style=flat-square&branch=main)
+[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/phoenix-chat-example/main.svg?style=flat-square)](https://codecov.io/github/dwyl/phoenix-chat-example?branch=main)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-phoenix/issues)
+[![HitCount](https://hits.dwyl.com/dwyl/learn-phoenix.svg)](https://github.com/dwyl/learn-phoenix)
 </div>
 
 ## _Why_? 🤷‍♀️
