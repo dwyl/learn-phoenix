@@ -10,7 +10,7 @@ that are **_fast_** for "_end-users_", **_reliable_**,
 
 </div>
 
-## _Why_?
+## _Why_? 🤷‍♀️
 
 As web/mobile app developers we _need_ to _leverage_
 the work that other (_really smart_) people have done <br />
@@ -38,16 +38,16 @@ You won't want to "_walk_" anywhere (_use a lesser means of web development_)
 _ever again_!
 -->
 
-> **Note**: **all** the reasons "***Why***"
-for ***Elixir*** _also apply_ to ***Phoenix***! <br />
-check them out: https://github.com/dwyl/learn-elixir#why <br />
+> **Note**: **all** the reasons "**_Why_**"
+for **_Elixir_** _also apply_ to **_Phoenix_**! <br />
+check them out:
+[dwyl/**learn-elixir**#**key-advantages**](https://github.com/dwyl/learn-elixir#key-advantages-) <br />
 
+## _What_? 💭
 
-## _What_?
+A web application framework **_without compromise_**! <br />
 
-A web application framework ***without compromise***! <br />
-
-### Developer Joy
+### Developer Joy 😍
 
 The biggest "_constraint_" in any technology project is _people_.
 An "Entrepreneur"/"Founder" or "Product Owner" can have all the _good ideas_
@@ -87,62 +87,71 @@ and [bobatoo.co.uk/blog/the-10-worst-car-modifications-ever](http://www.bobatoo.
 </sup>
 -->
 
-### (Should I _Care_ About) Benchmarks?
+### (Should I _Care_ About) Benchmarks? 📊
 
 _Obviously_, you should run your _own_ benchmarks on your own hardware/cloud
 and make _informed_ decisions based on the _requirements_ of your app/product,
-but ... when we _read_ the stats for how many ***concurrent users***
+but ... when we _read_ the stats for how many **_concurrent users_**
 a Phoenix App can handle (_with live WebSocket connections_)
 we were _blown_ away!
 It means we can build our real-time app(s) with 90% fewer resources.
 
-#### Performance Highlights
+### Performance Highlights ✨
 
-+ ***considerably lower latency*** and request response time than _anything_ else! (_thanks to Erlang's lightweight processes and ultra-efficient network/message handling_)
-+ ***4x*** more requests-per-second than the
-equivalent Node.js (_Express.js_) App.
-+ ***9x*** more throughput than a Python 2.7 based app. (_blocking really sucks!_)
-+ ***10x - 100x*** more requests handled than Ruby-on-Rails
++ **_considerably lower latency_**
+  and request response time than _anything_ else!
+  (_thanks to Erlang's lightweight processes and ultra-efficient network/message handling_)
++ **_4x_** more requests-per-second than the
+equivalent `Node.js` (_`Express.js`_) App.
++ **_9x_** more throughput than a `Python` based app. (_blocking really sucks!_)
++ **_10x - 100x_** more requests handled than `Ruby-on-Rails`
 (_depending on the type of app!_)
 + _Similar_ performance to **Go** on a _single server_,
-but a _much_ simpler multi-server concurrency model,
-so ***horizontal scaling*** across multiple data centers
-("availability zones") is _much easier_! (_Erlang manages the resources
+but a **_much_ simpler multi-server concurrency model**,
+so **_horizontal scaling_** across multiple data centers
+("availability zones") is _much easier_!
+(_Erlang manages the resources
   for multiple servers/processors as a single app "fleet"
   and delegates requests/processing to them across clusters/zones_!)
 
 All of this means that you spend _considerably_ less money
 on Hardware/Cloud infrastructure so your app/company
-can gain a ***competitive advantage*** on **cost**.
-
+can gain a **_competitive advantage_** on **cost**.
 
 >If you are in the _fortunate_ position to be _considering_ using
 something _way better_ for your _next_ project,
 look no further than Phoenix! <br />
-> Read more: http://www.phoenixframework.org
+> Read more:
+> [phoenixframework.org](http://www.phoenixframework.org)
 
+Where there is a specific high-performance function needed
+the BEAM VM also makes it easy
+to integrate `Elixir` with lower-level code.
+There are libs that make this easy, 
+such as `Rustler` (for `Rust`) and `Zigler` (for Zig).
 
-## _Who_?
+## _Who_? 👩🏻‍💻
 
 _Many_ people/teams/companies are _already_
 using Erlang/Elixir and Phoenix and seeing phenomenal results! <br />
-Including: Adobe, BBC, Spotify, Pinterest, Discord (Gamer Chat App),
-Groupon (Fave), Lonely Planet, Brightcove, Slack ... <br />
-See: https://github.com/doomspork/elixir-companies
+Including: `Adobe`, `BBC`, `Spotify`, `Pinterest`, `Discord` (Gamer Chat App),
+`Groupon` (Fave), `Lonely Planet`, `Brightcove`, `Slack` ... <br />
+See:
+[/elixir-companies](https://github.com/doomspork/elixir-companies)
 
-### Who _Should_ Learn Phoenix?
+### Who _Should_ Learn Phoenix? 🥋
 
 + People who want an _easy_ way of
 building an app with all the modern conveniences of "generators",
-built-in Database interface ("ORM") and ***Firstclass WebSockets***
+built-in Database interface ("ORM") and **_Firstclass WebSockets_**
 for "real-time" while getting **_legendary_ reliability**.
-+ Teams who need the developer productivity or Ruby-on-Rails or Django,
++ Teams who need the developer productivity or `Ruby-on-Rails` or `Django`,
 but want less "magic" (_i.e. want to **understand** how everything works!_).
-+ Companies who want to spend 90% less on both developer
++ Companies who want to **spend 90% less** on both developer
 and infrastructure costs
 so you can serve more people with fewer resources.
 
-### Who Should _NOT_ Learn Phoenix?
+### Who Should _NOT_ Learn Phoenix? 🚫
 
 + Anyone who needs to use the "_most popular_" framework or language
 (_for whatever reason_).
@@ -156,21 +165,21 @@ discuss: https://github.com/dwyl/learn-phoenix-framework/issues/14
 -->
 
 
-## _How_?
+## _How_? 👩🏻‍💻
 
 ### Assumptions / Pre-Requisites?
 
 #### Elixir
 
-You _cannot_ build a Phoenix App without knowing Elixir. <br />
-If you are new to Elixir, "star" (_bookmark_) `this` repo
+You _cannot_ build a `Phoenix` App without knowing `Elixir`. <br />
+If you are new to `Elixir`, "star" (_bookmark_) `this` repo
 (_so you can return to it tomorrow_)<br />
 and then go to:
-[github.com/dwyl/**learn-elixir**](https://github.com/dwyl/learn-elixir)
-learn elixir until you feel like you understand the syntax,
-then come back and learn Phoenix!
+[dwyl/**learn-elixir**](https://github.com/dwyl/learn-elixir)
+learn `Elixir` until you feel like you _understand_ the **syntax**,
+then come back and learn `Phoenix`!
 
-_Specifically_ you should focus on learning the Elixir "Basics":
+_Specifically_ you should focus on learning the `Elixir` "Basics":
 + types of data
 + atoms
 + pattern matching
@@ -178,51 +187,38 @@ _Specifically_ you should focus on learning the Elixir "Basics":
 + function definitions
 + modules
 
-#### Node.js
+### Installation ⬇️
 
-Phoenix uses Node.js to compile
-assets like JavaScript and CSS files (_using_ [Webpack](https://webpack.js.org/)). <br />
-Simply ensure you have Node.js _installed_. https://nodejs.org <br />
-You don't need to know Node to use Phoenix.
+If you've already learned some `Elixir`, then
+the first step to getting started with `Phoenix` is installation!
 
-### Installation
+The `Phoenix` documentation is amazing, so we recommend following the
+[official phoenix installation instructions](https://hexdocs.pm/phoenix/installation.html)
 
-If you've already learned some Elixir and installed Node.js, then
- the first step to getting started with Phoenix is installation!
-
-The Phoenix documentation is amazing, so we recommend following
-[the official phoenix installation instructions!](https://hexdocs.pm/phoenix/installation.html)
-
-You'll also need to install PostgreSQL, there is a tutorial of how to do so
-linked in the Phoenix installation guide linked above, but you can also check
-out our [`learn-postgresql`](https://github.com/dwyl/learn-postgresql) repo
+You'll also need to install `PostgreSQL`,
+there is a tutorial of how to do so
+linked in the `Phoenix` installation guide linked above, but you can also check
+out our
+[`learn-postgresql`](https://github.com/dwyl/learn-postgresql)
+repo
 for instructions, and raise an issue if you have any trouble!
 
+While a _basic_ understanding of `JavaScript` _can_ be useful at times,
+you don't _need_ it to use `Phoenix`.
 
-While a _basic_ understanding of JavaScript _can_ be useful at times,
-you don't _need_ to _know_ how to use Node to use Phoenix.
-
-> If you're curious _why_ they chose Brunch.io over "_alternatives_", <br />
-the short answer is: Simplicity & Speed!
-see: http://brunch.io/docs/why-brunch <br />
-> **Note**: Phoenix v1.4 (_unreleased at the time of writing_)
-uses WebPack for asset compilation,
-see: [CHANGELOG.md](https://github.com/phoenixframework/phoenix/blob/0bdb5b001915e437c2d2cf1b77a1c532ce45cde2/CHANGELOG.md#phxnew-installer)
-<!-- update this once v1.4 is released! -->
-
-### _Next_?
+### _Next_? ⏩
 
 _Familiarize_ yourself with the "Up and Running" (_official_) guide:
 https://hexdocs.pm/phoenix/up_and_running.html#content
 ![up-and-running](https://user-images.githubusercontent.com/194400/47036724-fca6c700-d174-11e8-9cd8-26f0ef0147e8.png "Phoenix Up and Running Beginner Guide")
 
-### _Practical_ Examples?
+### _Practical_ Examples? 💡
 
 Once you have phoenix installed
 and followed the _official_ "up and running" guide, <br />
 come back and try these **_beginner-friendly_ examples**:
 
-+ **Counter** (_realtime shared counter using Phoenix LiveView_): 
++ **Counter** (_realtime shared counter using Phoenix LiveView_):
 [https://github.com/dwyl/**phoenix-liveview-counter-tutorial**](https://github.com/dwyl/phoenix-liveview-counter-tutorial)
 + **Todo List** (_step-by-step tutorial showing how to build a fully functional TodoMVC clone_):
 [https://github.com/dwyl/**phoenix-todo-list-tutorial**](https://github.com/dwyl/phoenix-todo-list-tutorial)
@@ -234,32 +230,46 @@ come back and try these **_beginner-friendly_ examples**:
 [https://github.com/dwyl/**phoenix-ecto-append-only-log-example**](https://github.com/dwyl/phoenix-ecto-append-only-log-example)
 
 
-
 ### Book?
 
-We _recommend_ that people ***buy*** (_or borrow_)
-[@chrismccord](https://github.com/chrismccord)'s book:
-"Programming Phoenix"<br />
-see: https://pragprog.com/book/phoenix14/programming-phoenix-1-4 <br />
-[![phoenix-book-screenshot](https://user-images.githubusercontent.com/194400/47034955-afc0f180-d170-11e8-91b3-e12e4c8eccf5.png "Pragmatic Press - Phoenix 1.4 Book")](https://pragprog.com/book/phoenix14/programming-phoenix-1-4)
+When we started learning `Pheonix` in 2015,
+there was only one book written by
+[@chrismccord](https://github.com/chrismccord) creator of `Phoenix`: 
+[**Programming Phoenix**](https://pragprog.com/book/phoenix14/programming-phoenix-1-4) <br />
+Sadly, Chris has been too busy building `Phoenix`
+and the book hasn't been updated recently,
+so it's quite out-of-date.
+
+Luckily in the intervening years,
+_several_ great books have been published on the topic:
+[pragprog.com/search/?q=phoenix](https://pragprog.com/search/?q=phoenix)
+
+<img src="https://github.com/user-attachments/assets/649d674e-9a9e-4e30-9a59-922a8c932ca9" />
+
+Any of these books is a good starting point.
+
 <br />
 The authors are _individually **impressive**_ and _collectively_
-they _comprehenisively_ cover Phoenix like nobody else _can_!
-Chris _created_ Phoenix, José created Elixir
-and Bruce is ultra-experienced technical author
+they _comprehensively_ cover `Phoenix` like nobody else _can_!
+**Chris** _created_ `Phoenix`, **José** created `Elixir`
+and **Bruce** is ultra-experienced technical author
 with _many_ successful books to his name!  <br />
 (_i.e: the book is the obvious choice for how to learn Phoenix!_)
 
-<br />
-
-
-### Video Intro by José Valim (_Creator of Elixir_)
+### Video Intro by José Valim (_Creator of Elixir_) 📺
 
 [![Jose Valim - Phoenix a web framework for the new web](https://cloud.githubusercontent.com/assets/194400/22608108/e34aefbc-ea52-11e6-8694-9ac13c36db47.png)](https://youtu.be/MD3P7Qan3pw "Click to watch!") <br />
 https://youtu.be/MD3P7Qan3pw
 
 [![ElixirConf 2016 - Keynote by José Valim](https://cloud.githubusercontent.com/assets/194400/22608199/743b69d4-ea53-11e6-8153-e6655fc64453.png)](https://youtu.be/srtMWzyqdp8 "Click to watch!") <br />
 https://youtu.be/srtMWzyqdp8
+
+
+
+There are _many_ more superb `Elixir` and `Phenix` videos on `YouTube`
+search is your friend: 
+
+
 
 <br />
 

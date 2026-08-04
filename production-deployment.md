@@ -8,7 +8,6 @@ Please proceed with caution.
 If you're following them
 and have time to submit a PR to update, please do.
 
-
 ## Why?
 
 The Erlang VM ("BEAM") gives us "**_Hot-code Upgrades_**"
