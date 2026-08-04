@@ -22,9 +22,9 @@ that is _why_ we use _frameworks_ to build our apps!
 There are _many_ frameworks to choose from
 (_a **few** popular ones are mentioned **below**
 in the **Questions** section_).
-But if we go by what is "_popular_" we would
-still be riding horses (_and carts_) everywhere
-and no _progress_ would be made. <br />
+But if we go by what is "_popular_" we'd
+still be **riding horses** (_and carts_) everywhere
+and **no _progress_** would be made. <br />
 
 <!--
 Phoenix is like having a
@@ -299,23 +299,25 @@ search is your friend:
 with the **concurrency** and **fault-tolerance** of **Erlang**_."
 
 0. Beyond all the (_fantastic_) technical benefits,
-what attracts _us_ to Phoenix is the **_Great Community_**
-of people around the world who are _excited_ about making Phoenix
-an _amazing_ tool for building web apps! <br />
-Having [_welcomming_ people](https://github.com/phoenixframework/phoenix/issues/1624) who will
-  + help you when you get stuck, patiently explaining things
-  + answer questions (_both
+  what attracts _us_ to `Phoenix` is the **_Great Community_**
+  of people around the world who are _excited_ about making `Phoenix`
+  an _amazing_ tool for building web apps! <br />
+  Having
+  [_welcomming_ people](https://github.com/phoenixframework/phoenix/issues/1624)
+  who will:
+
+   + help you when you get stuck, patiently explaining things
+   + answer questions (_both
     ["**noob**"](https://elixirforum.com/t/defimpl-phoenix-param-to-override-to-param-causes-functionclauseerror-no-function-clause-matching-in-phoenix-param-rumbl-video-to-param-1/3987)
     and "**advanced**"_) and
-  + **_openly discuss_** (_your_) _**ideas** for **improvements**_.
- <br />
+   + **_openly discuss_** (_your_) _**ideas** for **improvements**_.
 
 1. Phoenix uses the **`Elixir`** programming language which means your
 app is compiled and run on the **`Erlang` Virtual Machine** "BEAM". <br />
 `Erlang` is a battle-tested highly fault-tolerant VM used by
 _many_ telecommunications companies
 
-1. **WebSockets** ("_channels_") are a **first-class citizen** of framework
+2. **WebSockets** ("_channels_") are a **first-class citizen** of framework
 which means building apps with "real-time" communication and interaction
 is _much_ easier than virtually _any_ other framework/platform!
 (_no third-party `magic` module needed! **everything you need** is
@@ -323,28 +325,32 @@ is _much_ easier than virtually _any_ other framework/platform!
 see: 
 [phoenixframework.org/docs/channels](http://www.phoenixframework.org/docs/channels)
 
-1. **Easy _asyncrhonisity_** because all programming
+3. **Easy _asyncrhonisity_** because all programming
 in Phoenix (_Elixir_) is **_Functional_**!
 This means it's _really_ simple to abstract useful functionality
 like request authentication, logging and processing into "_piplines_"
 that are easily ***human-readable***! (_no third-party `async` module required! no "promises", "generators" or "observables" to managed!!_)
 
-1. ***Security & Resilience Mindset*** is the `default`.
-**Encryption** (SSL) is ***easy*** in Phoenix/Elixir and
-both ***mitigation*** of **SQL injection**,
-***Cross-site Scripting*** (**XSS**)
-and ***CSRF protection*** are **built-in** (_enabled by `default`_) so
+4. **_Security & Resilience Mindset_** is the `default`.
+**Encryption** (SSL) is **_easy_** in Phoenix/Elixir and
+both **_mitigation_** of **SQL injection**,
+**_Cross-site Scripting_** (**XSS**)
+and **_CSRF protection_** are **built-in** (_enabled by `default`_) so
 it's virtually impossible for a "_novice_" programmer
 to introduce this type of security bug.
 
-1. ***Concise Code*** cannot be _understated_! We can write _way fewer_
+5. **_Concise Code_** cannot be _understated_! We can write _way fewer_
 lines than in the _equivalent_ Node.js/Java/Rails/Go app, this means
-developers are more _productive_ and there is ***less code to maintain***!
+developers are more _productive_ and there is **_less code to maintain_**!
 
-1. ***Testability*** due to functional programming of all controllers!
-2. **Easy Deployment**: https://hexdocs.pm/phoenix/heroku.html
-3. ***Zero-downtime Deployment*** is ***free***! (_again because of Erlang_). Erlang manages transitioning "_live/active_" users from the old to new version of your app without them even _noticing_ that it was upgraded/updated!!
-4. **_Built-in Monitoring/Managment_** of your app
+6. **_Testability_** due to functional programming of all controllers!
+7. **Easy Deployment**:
+  [fly.io/docs/elixir/getting-started/](https://fly.io/docs/elixir/getting-started/)
+8. **_Zero-downtime Deployment_** is **_free_**! (_again because of `Erlang`_).
+   `Erlang` manages transitioning "_live/active_" users
+   from the old to new version of your app
+   without them even _noticing_ that it was upgraded/updated!!
+9.  **_Built-in Monitoring / Management_** of your app
   through **`Erlang` supervisors**
 mean that you know _exactly_ how your app is performing,
 what parts have crashed/restarted and why!
@@ -353,8 +359,8 @@ other frameworks and here it's **_free_**!!
 
 Can _you_ think of _another_ reason
 _why_ using Phoenix is **_awesome_**?! <br />
-***Please Share your thoughts*** in this thread:
-https://github.com/dwyl/learn-phoenix-framework/issues/13
+**_Please Share your thoughts_** in this thread:
+[dwyl/learn-phoenix-framework#13](https://github.com/dwyl/learn-phoenix-framework/issues/13)
 
 <br /><br /><br />
 
@@ -366,7 +372,7 @@ https://github.com/dwyl/learn-phoenix-framework/issues/13
 
 ### Do I Need to _know_ `Erlang` to use `Elixir` & `Phoenix`...?
 
-***No***. You can start learning/using `Elixir` _today_ and
+**_No_**. You can start learning/using `Elixir` _today_ and
 call `Erlang` functions when required, <br />
 but you **_don't need_** to know `Erlang`
 `before` you can use `Phoenix`!
@@ -389,6 +395,7 @@ and internal dwyl apps/tools.
 
 We _decided_ to use `Phoenix`
 for our **_new_ projects** for these simple reasons:
+
 + `Elixir` is a _nicer_ language than `JavaScript`.
 + `JS` _can_ be functional, whereas `Elixir` **_is_** (_always_) Functional!
 The _distinction_ makes all the difference! <br />
@@ -407,7 +414,7 @@ we get that "**for free**" by using **Erlang -> Elixir -> Phoenix**_!!
 In our _opinion_ Hapi.js is still "_the best_" `Node.js` framework and
 we will `continue` to use and _recommend_ it <br />
 to people that need _simple_ apps that scale and are easy to maintain. <br />
-see: 
+see:
 [dwyl/**learn-hapi**](https://github.com/dwyl/learn-hapi)
 
 Also we still use JavaScript for all our AWS Lambda Micro-Services,
