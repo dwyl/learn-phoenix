@@ -1,11 +1,14 @@
-# Learn Phoenix (Web App) Framework
+<div align="center">
 
-![phoenix framework logo](https://cloud.githubusercontent.com/assets/194400/22605039/2065bca4-ea46-11e6-93f9-c927218784a9.png)
+<img alt="Learn Phoenix intro image"
+src="https://github.com/user-attachments/assets/88381bd7-1663-46d2-b27f-2a01ae412896" />
 
 Learn how to use Phoenix Framework to
 **have _fun_ building _real-time_ web/mobile apps** <br />
-that are ***fast*** for "_end-users_", ***reliable***,
-***scalable***, ***maintainable*** _and_ (_easily_) ***extensible***!
+that are **_fast_** for "_end-users_", **_reliable_**,
+**_scalable_**, **_maintainable_** _and_ _easily_ **_extensible_**!
+
+</div>
 
 ## _Why_?
 
