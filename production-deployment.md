@@ -5,15 +5,19 @@
 **Note**: these notes are **_super_ detailed**
 for **Zero-downtime Deployment**
 i.e. this will create a **100% Uptime System**.
-Some of the steps may be out-of-date.
-Please proceed with caution.
-If you're following them
-and have time to update,
+As of `Elixir 1.9` _most_ of the `Distillery` functionality
+is included in `Mix`.
+That's a _great_ thing because it means deployment is supported by "core".
+
+The notes are still relevant from a historical perspective.
+We will update them if needed for our project(s).
+If _you_ have have time to update,
 **please submit a PR**.
 
 ## Why?
 
-The Erlang VM ("BEAM") gives us "**_Hot-code Upgrades_**"
+The `Erlang` VM ("BEAM")
+gives us "**_Hot-code Upgrades_**"
 which means we can do "**_Zero Downtime Deployment_**". <br />
 So **people** can **_continue using_** the **app**
 `while` the app is **being updated/upgraded**!
@@ -21,13 +25,13 @@ Most other languages/frameworks/platforms make you work _really_ hard
 to get this feature, so _not_ using it seems kinda wasteful!
 
 > _**Note**: If you **don't need** "**Hot-code Upgrades**" and just want
-a way of deploying your Phoenix app to your own infrastructure,
+a way of deploying your `Phoenix` app to your own infrastructure,
 see:_
 [https://github.com/dwyl/**learn-devops**](https://github.com/dwyl/learn-devops/blob/master/nodejs-digital-ocean-centos-dokku.md)
 
 ## What?
 
-Production Phoenix Web Application Deployment
+Production `Phoenix` Web Application Deployment
 in **_Under_ 60 Minutes _from scratch_**
 (_or your money back!!_)
 
@@ -35,9 +39,10 @@ in **_Under_ 60 Minutes _from scratch_**
 
 The two (_main_) tools we will be using are:
 
-+ **Distillery**: https://github.com/bitwalker/distillery - builds the release
-binary including BEAM so there is _nothing_ to install on the VM!
-+ **edeliver**: https://github.com/boldpoker/edeliver - deploys the release
++ **`Distillery`**: 
+[bitwalker/distillery](https://github.com/bitwalker/distillery) - builds the release
+binary including `BEAM` so there is _nothing_ to install on the VM!
++ **`edeliver`**: https://github.com/boldpoker/edeliver - deploys the release
 to VM(s) using SSH.
 
 > **Note**: We will also be using `SSH` ("_Secure Shell_")
