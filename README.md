@@ -264,12 +264,20 @@ https://youtu.be/MD3P7Qan3pw
 [![ElixirConf 2016 - Keynote by José Valim](https://cloud.githubusercontent.com/assets/194400/22608199/743b69d4-ea53-11e6-8153-e6655fc64453.png)](https://youtu.be/srtMWzyqdp8 "Click to watch!") <br />
 https://youtu.be/srtMWzyqdp8
 
+**Code to the Moon**
+has a superb (recent) intro to `Phoenix`
+from the perspective of a `Rust` engineer with many decades of experience:
 
-
+The **Most Admired Web Framework**:
+[youtu.be/RNMwz5n1M80](https://youtu.be/RNMwz5n1M80
+)
 There are _many_ more superb `Elixir` and `Phenix` videos on `YouTube`
-search is your friend: 
+search is your friend:
+[youtube.com/results?search_query=phoenix+1.8](https://www.youtube.com/results?search_query=phoenix+1.8)
 
-
+> **Note**: remember to include the **latest _version_**
+> of `Phoenix` in your query
+> to get the latest results.
 
 <br />
 
