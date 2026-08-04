@@ -3,8 +3,8 @@
 <img alt="Learn Phoenix intro image"
 src="https://github.com/user-attachments/assets/88381bd7-1663-46d2-b27f-2a01ae412896" />
 
-Learn how to use Phoenix Framework to
-**have _fun_ building _real-time_ web/mobile apps** <br />
+Learn how to use the **`Phoenix` Framework** to
+**_enjoy_ building _real-time_ web/mobile apps** <br />
 that are **_fast_** for "_end-users_", **_reliable_**,
 **_scalable_**, **_maintainable_** _and_ _easily_ **_extensible_**!
 
@@ -248,29 +248,31 @@ _several_ great books have been published on the topic:
 
 Any of these books is a good starting point.
 
-<br />
+<!--
 The authors are _individually **impressive**_ and _collectively_
 they _comprehensively_ cover `Phoenix` like nobody else _can_!
 **Chris** _created_ `Phoenix`, **José** created `Elixir`
 and **Bruce** is ultra-experienced technical author
 with _many_ successful books to his name!  <br />
 (_i.e: the book is the obvious choice for how to learn Phoenix!_)
+-->
 
-### Video Intro by José Valim (_Creator of Elixir_) 📺
+### Video Intros 📺
 
+<!--
 [![Jose Valim - Phoenix a web framework for the new web](https://cloud.githubusercontent.com/assets/194400/22608108/e34aefbc-ea52-11e6-8694-9ac13c36db47.png)](https://youtu.be/MD3P7Qan3pw "Click to watch!") <br />
 https://youtu.be/MD3P7Qan3pw
 
 [![ElixirConf 2016 - Keynote by José Valim](https://cloud.githubusercontent.com/assets/194400/22608199/743b69d4-ea53-11e6-8153-e6655fc64453.png)](https://youtu.be/srtMWzyqdp8 "Click to watch!") <br />
 https://youtu.be/srtMWzyqdp8
+-->
 
-**Code to the Moon**
-has a superb (recent) intro to `Phoenix`
+**Code to the Moon** ([@MoonKraken](https://github.com/MoonKraken))
+has a _superb_ (recent) intro to `Phoenix`
 from the perspective of a `Rust` engineer with many decades of experience:
+"The **Most Admired Web Framework**":
+[youtu.be/RNMwz5n1M80](https://youtu.be/RNMwz5n1M80)
 
-The **Most Admired Web Framework**:
-[youtu.be/RNMwz5n1M80](https://youtu.be/RNMwz5n1M80
-)
 There are _many_ more superb `Elixir` and `Phenix` videos on `YouTube`
 search is your friend:
 [youtube.com/results?search_query=phoenix+1.8](https://www.youtube.com/results?search_query=phoenix+1.8)
@@ -279,14 +281,14 @@ search is your friend:
 > of `Phoenix` in your query
 > to get the latest results.
 
-<br />
+<!--
 
 ## Resources
 
 + Elixir vs Ruby Showdown - Phoenix vs Rails: https://littlelines.com/blog/2014/07/08/elixir-vs-ruby-showdown-phoenix-vs-rails
 + Benchmark: https://github.com/mroth/phoenix-showdown
 
-<br /><br /><br />
+-->
 
 # _Our Top 10_ Reasons _Why_ Phoenix
 
@@ -302,29 +304,29 @@ Having [_welcomming_ people](https://github.com/phoenixframework/phoenix/issues/
   + answer questions (_both
     ["**noob**"](https://elixirforum.com/t/defimpl-phoenix-param-to-override-to-param-causes-functionclauseerror-no-function-clause-matching-in-phoenix-param-rumbl-video-to-param-1/3987)
     and "**advanced**"_) and
-  + ***openly discuss*** (_your_) _**ideas** for **improvements**_.
-  see: https://elixirforum.com/t/phoenix-v1-3-0-rc-0-released/3947 <br />
+  + **_openly discuss_** (_your_) _**ideas** for **improvements**_.
  <br />
 
-1. Phoenix uses the **Elixir** programming language which means your
-app is compiled and run on the ***Erlang Virtual Machine*** "BEAM". <br />
-Erlang is a battle-tested highly fault-tolerant VM used by
+1. Phoenix uses the **`Elixir`** programming language which means your
+app is compiled and run on the **`Erlang` Virtual Machine** "BEAM". <br />
+`Erlang` is a battle-tested highly fault-tolerant VM used by
 _many_ telecommunications companies
 
-2. **WebSockets** ("_channels_") are ***built-in*** to the framework
+1. **WebSockets** ("_channels_") are a **first-class citizen** of framework
 which means building apps with "real-time" communication and interaction
 is _much_ easier than virtually _any_ other framework/platform!
 (_no third-party `magic` module needed! **everything you need** is
   already there ready for you to serve **millions** of people!!_) <br />
-see: http://www.phoenixframework.org/docs/channels
+see: 
+[phoenixframework.org/docs/channels](http://www.phoenixframework.org/docs/channels)
 
-3. **Easy _asyncrhonisity_** because all programming
-in Phoenix (_Elixir_) is ***Functional***!
+1. **Easy _asyncrhonisity_** because all programming
+in Phoenix (_Elixir_) is **_Functional_**!
 This means it's _really_ simple to abstract useful functionality
 like request authentication, logging and processing into "_piplines_"
 that are easily ***human-readable***! (_no third-party `async` module required! no "promises", "generators" or "observables" to managed!!_)
 
-4. ***Security & Resilience Mindset*** is the `default`.
+1. ***Security & Resilience Mindset*** is the `default`.
 **Encryption** (SSL) is ***easy*** in Phoenix/Elixir and
 both ***mitigation*** of **SQL injection**,
 ***Cross-site Scripting*** (**XSS**)
@@ -332,14 +334,14 @@ and ***CSRF protection*** are **built-in** (_enabled by `default`_) so
 it's virtually impossible for a "_novice_" programmer
 to introduce this type of security bug.
 
-5. ***Concise Code*** cannot be _understated_! We can write _way fewer_
+1. ***Concise Code*** cannot be _understated_! We can write _way fewer_
 lines than in the _equivalent_ Node.js/Java/Rails/Go app, this means
 developers are more _productive_ and there is ***less code to maintain***!
 
-5. ***Testability*** due to functional programming of all controllers!
-6. **Easy Deployment**: https://hexdocs.pm/phoenix/heroku.html
-7. ***Zero-downtime Deployment*** is ***free***! (_again because of Erlang_). Erlang manages transitioning "_live/active_" users from the old to new version of your app without them even _noticing_ that it was upgraded/updated!!
-8. ***Built-in Monitoring/Managment*** of your app through Erlang supervisors
+1. ***Testability*** due to functional programming of all controllers!
+2. **Easy Deployment**: https://hexdocs.pm/phoenix/heroku.html
+3. ***Zero-downtime Deployment*** is ***free***! (_again because of Erlang_). Erlang manages transitioning "_live/active_" users from the old to new version of your app without them even _noticing_ that it was upgraded/updated!!
+4. ***Built-in Monitoring/Managment*** of your app through Erlang supervisors
 mean that you know _exactly_ how your app is performing, what parts have
 crashed/restarted and why! This is a feature we _pay_ (_a lot_) for in other frameworks and here it's ***free***!!
 
