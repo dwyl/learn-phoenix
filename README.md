@@ -477,14 +477,20 @@ with persistent connections, Erlang was ***made for this***!
 security features most people won't even think of.
 
 Further Reading:
-+ Why Go is Not Good: http://yager.io/programming/go.html
-+ Go Web Frameworks: https://medium.com/code-zen/why-i-don-t-use-go-web-frameworks-1087e1facfa4
-+ Why Everyone Hates Go: https://npf.io/2014/10/why-everyone-hates-go/
-(_click-bait title, some valid points..._)
-+ Discussion: https://www.reddit.com/r/elixir/comments/3c8yfz/how_does_go_compare_to_elixir
+
++ Why `Go` is Not Good:
+  http://yager.io/programming/go.html
++ `Go` Web Frameworks:
+  https://medium.com/code-zen/why-i-don-t-use-go-web-frameworks-1087e1facfa4
++ Why Everyone Hates `Go`:
+  https://npf.io/2014/10/why-everyone-hates-go/
+  (_click-bait title, some valid points..._)
++ Discussion:
+  https://www.reddit.com/r/elixir/comments/3c8yfz/how_does_go_compare_to_elixir
 <br />
 (`help wanted` expanding this answer...)
 
+<!--
 ### Why _NOT_ Use Scala + `Play` Framework _instead_...?
 
 If you are already used to writing Java or deploying to the JVM,
@@ -526,6 +532,6 @@ Tell us: https://github.com/dwyl/learn-phoenix-web-development/issues
 ### Why not use Haskell?
 
 If you like ***Functional Programming*** (**FP**) so much, why not use Haskell?
-
+-->
 
 #### _Please_ ask more questions: https://github.com/dwyl/learn-phoenix-framework/issues
