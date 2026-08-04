@@ -3,10 +3,13 @@
 ## _using_ Distillery and Edeliver
 
 **Note**: these notes are **_super_ detailed**
-but some steps may be out-of-date.
+for **Zero-downtime Deployment**
+i.e. this will create a **100% Uptime System**.
+Some of the steps may be out-of-date.
 Please proceed with caution.
 If you're following them
-and have time to submit a PR to update, please do.
+and have time to update,
+**please submit a PR**.
 
 ## Why?
 
